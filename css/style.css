@@ -1,0 +1,79 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.container h1 {
+    color: #b9221c;
+    font-size: 3em;
+}
+
+.container h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #b9221c;
+}
+
+.container p {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+/* Base state for animatable elements */
+.animate-slide {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.5s ease-out;
+}
+
+/* State for elements when they are in the viewport */
+.animate-slide.in-view {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#lifeguard-training-image {
+    width: 50%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto 30px auto;
+}
+
+
+@media (max-width: 991.98px) {
+    .navbar-toggler {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .navbar-brand.mx-auto.d-lg-none {
+        float: none;
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbar-collapse {
+        clear: both;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-brand.d-none.d-lg-block {
+        margin-left: 50px;
+    }
+
+    .navbar-nav {
+        margin-right: 50px;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
