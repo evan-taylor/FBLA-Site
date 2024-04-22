@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Readex Pro, Geneva, Tahoma, sans-serif;
 }
 
 .navbar {
@@ -23,14 +26,12 @@ body {
     margin-bottom: 15px;
 }
 
-/* Base state for animatable elements */
 .animate-slide {
     opacity: 0;
     transform: translateX(-20px);
     transition: all 1s ease-out;
 }
 
-/* State for elements when they are in the viewport */
 .animate-slide.in-view {
     opacity: 1;
     transform: translateX(0);
@@ -44,6 +45,44 @@ body {
     margin: 30px auto 30px auto;
 }
 
+#cpr-training-image {
+    width: 45%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin: 30px auto 30px auto;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f9fa;
+    /* Light background for the upper part */
+    color: black;
+    /* Text color */
+}
+
+footer a {
+    color: black;
+    /* Ensures links are appropriately colored for readability */
+}
+
+footer a:hover {
+    text-decoration: none;
+    /* Smooth hover effect without underline */
+    color: #0056b3;
+    /* Link hover color */
+}
+
+footer .bg-dark {
+    background-color: #343a40 !important;
+    /* Dark background for the lower part */
+}
+
+#footerHeading, #footerContact, #footerLinks {
+    color: #b9221c;
+}
+
+/* Media Queries */
 
 @media (max-width: 991.98px) {
     .navbar-toggler {
