@@ -46,32 +46,96 @@
             </div>
         </div>
     </nav>
-    <div class="container mt-4">
-        <h1>Application Form</h1>
-        <form>
-            <div class="mb-3">
-                <label for="name" class="form-label">Full Name</label>
-                <input type="text" class="form-control" id="name" required>
+    <main>
+        <!-- Application Hero Section -->
+        <div class="container mt-4 text-center">
+            <h1>Apply Now</h1>
+            <p class="lead">Start your journey with Taylored Instruction and make an impact every day.</p>
+        </div>
+
+        <!-- Application Form Section -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="mb-4">Application Form</h2>
+                    <form action="https://formsubmit.co/evan@tayloredinstruction.com" method="POST" />
+                        <!-- Personal Information Section -->
+                        <h3>Personal Information</h3>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" name= "fullName" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="emailAddress" name="emailAddress"required>
+                        </div>
+                        <!-- Position Section -->
+                        <h3>Position</h3>
+                        <div class="mb-3">
+                            <label for="position" class="form-label">What position are you applying for?</label>
+                            <select class="form-control" id="position" name="position" required>
+                                <option>CPR Instructor</option>
+                                <option>Lifeguarding Instructor</option>
+                                <option>Safety Consultant</option>
+                                <option>Swim Instructor</option>
+                                <option>Lifeguard</option>
+                                <option>Office Manager</option>
+                            </select>
+                        </div>
+                        <!-- Resume Upload Section -->
+                        <h3>Resume</h3>
+                        <div class="mb-3">
+                            <label for="resume" class="form-label">Upload Resume</label>
+                            <input type="file" class="form-control" id="resume" name="resume" required>
+                        </div>
+                        <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary">Submit Application</button>
+                    </form>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="email" required>
+        </div>
+    </main>
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="container p-4">
+            <div class="row">
+                <!-- Footer About Section -->
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 id="footerHeading" class="text-uppercase">About Taylored Instruction</h5>
+                    <p>
+                        At Taylored Instruction, we are dedicated to providing the highest quality health and safety
+                        training. Our goal is to equip every individual and organization with the skills they need to
+                        respond to emergencies with confidence.
+                    </p>
+                </div>
+
+                <!-- Footer Links Section -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 id="footerLinks" class="text-uppercase">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-dark">Home</a></li>
+                        <li><a href="benefits.html" class="text-dark">Benefits</a></li>
+                        <li><a href="careers.html" class="text-dark">Careers</a></li>
+                        <li><a href="apply.html" class="text-dark">Apply</a></li>
+                    </ul>
+                </div>
+
+                <!-- Footer Contact Section -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 id="footerContact" class="text-uppercase">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: <a href="mailto:evan@tayloredinstruction.com"
+                                class="text-dark">evan@tayloredinstruction.com</a></li>
+                        <li>Phone: <a href="tel:+3602071844" class="text-dark">360-207-1844</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="mb-3">
-                <label for="position" class="form-label">Position Applying For</label>
-                <select class="form-control" id="position">
-                    <option>CPR Trainer</option>
-                    <option>Lifeguard Trainer</option>
-                    <option>Swimming Instructor</option>
-                </select>
-            </div>
-            <div class="mb-3">
-                <label for="resume" class="form-label">Upload Resume</label>
-                <input type="file" class="form-control" id="resume" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit Application</button>
-        </form>
-    </div>
+        </div>
+
+        <!-- Footer Copyright -->
+        <div class="text-center p-3 bg-dark text-white">
+            © 2024 Taylored Instruction
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
 
