@@ -1,13 +1,17 @@
-
-window.addEventListener('scroll', () => {
+document.addEventListener('scroll', () => {
     document.querySelectorAll('.animate-slide').forEach(el => {
         const position = el.getBoundingClientRect();
 
-        if (position.top < window.innerHeight && position.bottom >= 0) {
-            el.classList.add('in-view');
+        // Check if the element is within the viewport and has not been animated yet
+        if (position.top < window.innerHeight && position.bottom >= 0 && !el.classList.contains('in-view')) {
+            // Add a slight delay to ensure the element is animated when it's about to come into view
+            setTimeout(() => {
+                el.classList.add('in-view');
+            }, 200);
         }
     });
 });
+
 
 document.addEventListener('DOMContentLoaded', function () {
     var resumeInput = document.getElementById('resume');
