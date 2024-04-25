@@ -72,7 +72,9 @@
                         </div>
                         <div class="mb-3">
                             <label for="emailAddress" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="emailAddress" name="email" required>
+                            <input type="email" class="form-control" id="emailAddress" name="email" required
+                                oninvalid="this.setCustomValidity('Please enter a valid email address')"
+                                oninput="this.setCustomValidity('')">
                         </div>
                         <div class="mb-3">
                             <label for="phoneNumber" class="form-label">Phone Number (optional)</label>
