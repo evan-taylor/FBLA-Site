@@ -7,7 +7,7 @@ document.addEventListener('scroll', () => {
             // Add a slight delay to ensure the element is animated when it's about to come into view
             setTimeout(() => {
                 el.classList.add('in-view');
-            }, 200);
+            }, 250);
         }
     });
 });
